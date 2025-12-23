@@ -5,124 +5,183 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+        *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
     font-family: Arial, sans-serif;
 }
 
-.services {
-    padding: 50px;
-    background: #fff;
+/* CONTACT HEADER */
+.contact-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:60px 80px;
+    background:#fff;
+    position:relative;
 }
 
-.small-title {
-    color: #7aa77a;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 10px;
+.left-text p{
+    font-size:14px;
+    color:#555;
+    line-height:1.4;
 }
 
-.services h1 {
-    text-align: center;
-    margin-bottom: 40px;
+.center-text{
+    text-align:center;
 }
 
-.services-box {
-    display: flex;
-    gap: 30px;
-    max-width: 1100px;
-    margin: auto;
+.center-text h1{
+    font-size:48px;
+    font-weight:500;
 }
 
-/* Left menu */
-.service-list {
-    width: 30%;
+.line{
+    width:80px;
+    height:2px;
+    background:#d6ff00;
+    margin:10px auto 0;
 }
 
-.service-list button {
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    background: #fff;
-    cursor: pointer;
-    text-align: left;
-    font-size: 15px;
+.circle-btn{
+    width:60px;
+    height:60px;
+    background:#d6ff00;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:24px;
+    cursor:pointer;
 }
 
-.service-list button.active {
-    background: #5f8f6e;
-    color: white;
-    border: none;
+/* FOOTER */
+.footer{
+    display:flex;
+    justify-content:space-between;
+    padding:60px 80px;
+    background:#000;
+    color:#fff;
 }
 
-/* Right content */
-.service-content {
-    width: 70%;
+.footer-col{
+    width:22%;
 }
 
-.service-content img {
-    width: 100%;
-    border-radius: 5px;
-    margin-bottom: 20px;
+.footer-col.big h2{
+    font-size:36px;
+    font-weight:500;
 }
 
-.service-content h2 {
-    margin-bottom: 10px;
+.footer-col h4{
+    font-size:14px;
+    margin-bottom:15px;
 }
 
-.service-content p {
-    color: #666;
-    line-height: 1.6;
+.footer-col p{
+    font-size:13px;
+    line-height:1.6;
+    color:#ccc;
+}
+
+.footer-col a{
+    display:inline-block;
+    margin-top:12px;
+    font-size:12px;
+    color:#fff;
+    text-decoration:none;
+    border-bottom:1px solid #fff;
+}
+
+.newsletter{
+    margin-top:20px;
+    display:inline-block;
+}
+
+.follow{
+    margin-top:30px;
+    font-size:12px;
+}
+
+.icons{
+    margin-top:10px;
+    display:flex;
+    gap:15px;
+    font-size:14px;
 }
 
     </style>
 </head>
 <body>
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Our Services</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<section class="services">
-    <p class="small-title">OUR SERVICES</p>
-    <h1>We Can Help You With This Situation</h1>
-
-    <div class="services-box">
-
-        <!-- Left Menu -->
-        <div class="service-list">
-            <button class="active">Relation Problem</button>
-            <button>Couples Counseling</button>
-            <button>Depression Treatment</button>
-            <button>Family Problem</button>
-            <button>Personal Problem</button>
-            <button>Business Problem</button>
-        </div>
-
-        <!-- Right Content -->
-        <div class="service-content">
-            <img src="./family.jpg" alt="Relation Problem">
-            <h2>Relation Problem</h2>
-            <p>
-                Far far away, behind the word mountains, far from the countries
-                Vokalia and Consonantia, there live the blind texts. Separated
-                they live in Bookmarksgrove right at the coast of the Semantics,
-                a large language ocean.
-            </p>
-        </div>
-
+<!-- CONTACT HEADER -->
+<section class="contact-header">
+    <div class="left-text">
+        <p>HEARD<br>ENOUGH →</p>
     </div>
+
+    <div class="center-text">
+        <h1>Contact us</h1>
+        <div class="line"></div>
+    </div>
+
+    <div class="circle-btn">→</div>
 </section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-col big">
+        <h2>The agency<br>for impatient<br>brands®</h2>
+    </div>
+
+    <div class="footer-col">
+        <h4>LONDON</h4>
+        <p>
+            newbusiness@weareimpero.com<br>
+            +44 20 7998 7571<br>
+            Unit 306, Metropolitan Wharf,<br>
+            70 Wapping Wall, London E1W 3SS
+        </p>
+        <a href="#">SEE ON MAP ↗</a>
+    </div>
+
+    <div class="footer-col">
+        <h4>BUENOS AIRES</h4>
+        <p>
+            buenosaires@weareimpero.com<br>
+            +54 11 6799 7949<br>
+            Cabildo 1458 1st floor,<br>
+            Buenos Aires
+        </p>
+        <a href="#">SEE ON MAP ↗</a>
+    </div>
+
+    <div class="footer-col">
+        <h4>WANT TO BE THE SMARTEST<br>IN YOUR OFFICE?</h4>
+        <a href="#" class="newsletter">SIGN UP FOR OUR NEWSLETTER →</a>
+
+        <p class="follow">FOLLOW US</p>
+        <div class="icons">
+            <span>Be</span>
+            <span>🌐</span>
+            <span>📸</span>
+            <span>in</span>
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>
 
+    
 </body>
 </html>
